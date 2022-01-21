@@ -128,18 +128,24 @@
 			
 			<!-- Comment Textarea -->
 			<div class="w-full bg-white p-2 pt-4 rounded shadow-lg">
-				<div class="flex ml-3">
-					<div class="mr-3">
-					<img src="http://picsum.photos/50" alt="" class="rounded-full">
-					</div>
-					<div>
-					<h1 class="font-semibold">Itay Buyoy</h1>
-					<p class="text-xs text-gray-500">2 seconds ago</p>
+				<div class="flex flex-wrap mx-3">
+					<div class="w-full">
+					  <label class="block mb-1" for="formGridCode_card">Email</label>
+					  <input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" type="email" name="email" id="email"/>
 					</div>
 				</div>
-			
+				<div class="flex space-between mx-3">
+					<div class="w-full">
+					  <label class="block mb-1" for="formGridCode_name">Author</label>
+					  <input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" type="text" name="author" id="author"/>
+					</div>
+					<div class="w-full ml-1">
+					  <label class="block mb-1" for="formGridCode_last">Website</label>
+					  <input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" type="url" name="url" id="url"/>
+					</div>
+				</div>
 				<div class="mt-3 p-3 w-full">
-					<textarea rows="3" class="border p-2 rounded w-full" placeholder="Write something..."></textarea>
+					<textarea rows="3" class="border p-2 rounded w-full" name="comment" placeholder="Write something..."></textarea>
 				</div>
 			
 				<div class="flex mx-3">
